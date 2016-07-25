@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <script type="text/javascript">
+var fallbackFunction = function() {
+	window.location.replace('market://details?id=com.microquation.linkedme');
+};
+var addIFrame = function() {
+	var iframe = document.createElement("iframe");
+	iframe.style.border = "none";
+	iframe.style.width = "1px";
+	iframe.style.height = "1px";
+	iframe.src = 'lkmedemo://?click_id=IEGyekes7';
+	document.body.appendChild(iframe);
+};
+<!--addIFrame();-->
+<!--setTimeout(fallbackFunction, 250);-->
+
+    </script>
+</head>
+<body>
+<br/>
+<button onclick="addIFrame()">open app with iframe</button>
+<br/>
+<br/>
+<a href="market://details?id=com.microquation.linkedme">open app with market</a>
+<br/>
+<br/>
+<a href="lkmedemo://?click_id=IEGyekes7">open app with uri-scheme</a>
+<br/>
+<br/>
+<a href="intent:///#Intent;scheme=lkmedemo;package=com.microquation.linkedme;S.browser_fallback_url=http://linkedme.cc;end">Android
+    Intents with Chrome</a>
+<br/>
+<br/>
+<a href="intent://lkmedemo://?click_id=IEGyekes7#Intent;scheme=http;package=com.microquation.linkedme;end">Android
+    Intents with Chrome with params</a>
+
+</body>
+</html>
