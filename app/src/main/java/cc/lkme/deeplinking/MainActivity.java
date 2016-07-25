@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, BrowserActivity.class));
             }
         });
-        String click_id = getIntent().getData().getQueryParameter("click_id");
+        if (getIntent().getData()!= null){
+            //获取query中的数据
+            String click_id = getIntent().getData().getQueryParameter("click_id");
+        }
     }
 }
