@@ -16,7 +16,7 @@
             </intent-filter>
             <!-- URI Scheme方式 -->
             <intent-filter>
-                <data android:scheme="lkme" />
+                <data android:scheme="lkmedemo" />
 
                 <action android:name="android.intent.action.VIEW" />
 
